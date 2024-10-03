@@ -22,17 +22,20 @@ class MyTextField extends StatelessWidget {
             obsecureText, // Controls text obscuring for password-like fields
         decoration: InputDecoration(
           enabledBorder: const OutlineInputBorder(
-            borderRadius: BorderRadius.all(Radius.circular(10)),
-            borderSide: BorderSide(color: Color.fromARGB(255, 156, 155, 155)),
+            borderRadius: BorderRadius.all(Radius.circular(20)),
+            borderSide: BorderSide(color: Color(0xFFC2C2C2)),
           ),
           focusedBorder: const OutlineInputBorder(
-            borderRadius: BorderRadius.all(Radius.circular(10)),
-            borderSide: BorderSide(color: Color.fromARGB(255, 136, 135, 135)),
+            borderRadius: BorderRadius.all(Radius.circular(20)),
+            borderSide: BorderSide(color: Color(0xFFC2C2C2)),
           ),
-          fillColor: const Color.fromARGB(255, 217, 217, 217),
+          fillColor: Colors.white,
           filled: true,
           hintText: hintText,
-          hintStyle: const TextStyle(color: Color.fromARGB(255, 142, 142, 142)),
+          hintStyle: const TextStyle(
+              color: Color(0xFF969696),
+              fontSize: 14,
+          ),
         ),
       ),
     );

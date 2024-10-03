@@ -125,7 +125,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color.fromARGB(255, 196, 196, 196),
+      backgroundColor: Colors.white,
       body: SafeArea(
         child: Center(
           child: SingleChildScrollView(
@@ -135,18 +135,18 @@ class _LoginPageState extends State<LoginPage> {
                 // Logo
                 const Icon(
                   Icons.lock,
-                  size: 100,
+                  size: 50,
                 ),
 
                 // Say Hello
-                const SizedBox(height: 50),
+                const SizedBox(height: 20),
                 const Text(
                   "Welcome back, you've been missed!",
-                  style: TextStyle(color: Colors.black, fontSize: 16),
+                  style: TextStyle(color: Color(0xFF969696), fontSize: 16),
                 ),
 
                 // Username textfield
-                const SizedBox(height: 70),
+                const SizedBox(height: 30),
                 MyTextField(
                   controller: emailController,
                   hintText: 'Email',
